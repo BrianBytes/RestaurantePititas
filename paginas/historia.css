@@ -1,0 +1,172 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    justify-content: flex-start;
+    font-size: x-large;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: large;
+}
+
+
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo parallax */
+.parallax {
+    background-image: url('platos/fondo.png');
+    height: 80vh;
+    background-attachment: fixed; /* Esto crea el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parallax-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para el texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parallax-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.parallax-header p {
+    font-size: 1.2rem;
+}
+
+/* Sección de contenido */
+.contenido {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+/* Estilo de los cuadros del equipo */
+.quienes-somos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.miembro {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.miembro:hover {
+    transform: scale(1.1); /* Agranda el cuadro al pasar el ratón */
+}
+
+.miembro img {
+    width: 290px; /* Mismo ancho que el lomo */
+    height: 290px; /* Misma altura que el lomo */
+    object-fit: cover; /* Para que la imagen se ajuste bien */
+    border-radius: 10px; /* Bordes redondeados igual que el lomo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra idéntica */
+    transition: transform 0.3s ease-in-out; /* Efecto de zoom */
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.miembro h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 1rem;
+    color: #666;
+}
+

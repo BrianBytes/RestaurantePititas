@@ -1,0 +1,174 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    justify-content: flex-start;
+    font-size: x-large;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: large;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/bf/57/de/bf57dec10d7107348ba1e8e9916f3a75.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-right: 678px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Estilos para la Carta de Platillos */
+.menu-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.menu-section h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-img img {
+    transform: scale(1.1);
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.menu-item p {
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-detalles {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detalles:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}

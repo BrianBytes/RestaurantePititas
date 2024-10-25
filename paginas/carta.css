@@ -1,0 +1,239 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    justify-content: flex-start;
+    font-size: x-large;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: large;
+}
+
+/* Sección de la Carta */
+.carta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 50px;
+    height: 70vh;
+}
+
+.contenido-carta {
+    text-align: left;
+    max-width: 50%;
+}
+
+.contenido-carta h2 {
+    font-size: 48px;
+    font-family: 'Lora', serif;
+    color: #ffffff;
+}
+
+.linea-verde {
+    width: 50px;
+    height: 3px;
+    background-color: #00a97f;
+    margin: 10px 0;
+}
+
+.contenido-carta p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.flecha-abajo {
+    font-size: 40px;
+    color: #00a97f;
+    margin-top: 20px;
+}
+
+.imagen-carta img {
+    height: auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.nuestra-carta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 50px;
+}
+
+.nuestra-carta .texto {
+    flex: 1;
+    color: rgb(0, 0, 0);
+}
+
+.nuestra-carta h2 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.nuestra-carta .flecha-abajo {
+    font-size: 3rem;
+    color: #00C389;
+    margin-top: 20px;
+}
+
+.nuestra-carta .imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nuestra-carta img {
+    max-width: 80%;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.imagen-item {
+    margin: 0 10px;
+    
+}
+
+.imagen-item img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Estilo del menú */
+.menu-carta {
+    text-align: center;
+    padding: 30px 50px;
+}
+.menu-carta ul {
+    list-style-type: none;  /* Sin puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-carta li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative; /* Necesario para colocar la línea correctamente */
+}
+
+.menu-carta li::before {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px dotted #00c389; /* Línea punteada */
+    position: absolute;
+    top: 50%;
+    left: 30%;  /* Espacio dejado para el nombre del plato */
+    right: 20%; /* Espacio dejado para el precio */
+    transform: translateY(-50%); /* Centra verticalmente la línea */
+    z-index: 0;
+}
+
+.nombre {
+    z-index: 1; /* Para que el texto se vea por encima de la línea */
+    padding-right: 10px;
+}
+
+.precio {
+    z-index: 1; /* Para que el precio se vea por encima de la línea */
+    padding-left: 10px;
+    white-space: nowrap; /* Evita que el precio salte de línea */
+}
+.menu-carta h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-carta .linea {
+    width: 50%;
+    height: 3px;
+    background-color: #00c389;
+    margin: 0 auto 30px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.menu-col {
+    flex: 1;
+}
+
+.menu-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-col li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
